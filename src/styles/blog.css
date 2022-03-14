@@ -22,8 +22,8 @@
 	--color-blue-rgb: 56, 148, 255;
 	--color-green: #17c083;
 	--color-green-rgb: 23, 192, 131;
-	--color-orange: #ff5d01;
-	--color-orange-rgb: 255, 93, 1;
+	--color-orange: #d96459;
+	--color-orange-rgb: 217, 100, 89;
 	--color-purple: #882de7;
 	--color-purple-rgb: 136, 45, 231;
 	--color-red: #ff1639;
@@ -260,7 +260,7 @@ img.cover {
 }
 
 blockquote {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	--padding-block: 1rem;
 	--padding-inline: 1.25rem;
 	--color: var(--theme-divider);
