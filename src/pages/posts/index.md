@@ -6,7 +6,7 @@ title: Web Component Best Practices
 publishDate: 14 March 2022
 name: Mark Anthony Cianfani
 value: 128
-description: Writing Web Components is hard. Writing good Web Components is really hard. After spending the last year building out the AstrouUXDS Web Components, Ive learned a hard truth that a really good React/Vue/Angular/FoobarJS component does not make a really good web component. For those who are first jumping into the pool of Web Components, here is the guide that I wish I had one year ago.
+description: Writing Web Components is hard. Writing good Web Components is really hard. After spending the last year building out the AstroUXDS web component library, Ive learned a hard truth that a really good React/Vue/Angular/FoobarJS component does not make a really good web component. For those who are first jumping into the pool of Web Components, here is the guide that I wish I had one year ago.
 ---
 
 # Web Component Best Practices
