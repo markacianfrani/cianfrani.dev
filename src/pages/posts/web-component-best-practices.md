@@ -25,11 +25,11 @@ Remember we are writing custom (HTML) elements. These atoms need to be flexible 
 
 ## Anatomy of a Web Component
 
-![Tux, the Linux mascot](/assets/blog/anatomy.png)
+![crude web component API diagram](/assets/blog/anatomy.png)
 
-To write a good web component, you need a solid understanding of all of the available APIs at your disposal. You will be constantly juggling between extensibility vs. ease of use. For any given feature, you should think carefully which API to use.
+To write a good web component, you need a solid understanding of all of the available APIs at your disposal. You will be constantly juggling between extensibility vs. ease of use. For any given feature, you should think carefully about which API to use.
 
-If you're coming from a framework mindset, you might already be familiar with slots, props, and events. Web Components give us two additional unique APIs--CSS Custom Properties and CSS Shadow Parts. Your component's styling is now it's own API.
+If you're coming from a framework mindset, you might already be familiar with slots, props, and events. Web Components give us two additional unique APIs--CSS Custom Properties and CSS Shadow Parts. **Your component's styling is now it's own API**. Use this to your advantage.
 
 ### Slots
 
@@ -81,7 +81,9 @@ But CSS Custom Properties still have their place:
 * ❌ Maintainability can suffer if used carelessly
 * ❌ Require developers to write more boilerplate
 
-CSS Shadow Parts solve the problem of "how do I style XYZ". They allow you to define the "parts" that your custom element is composed of. Channel your inner Zeldman. Shadow parts should have some semantic meaning. They should represent an abstract piece of your component. Because these are part of your API, you need to be careful in what you expose publicly. Sometimes the answer to "how do I style XYZ" is, "you don't". Maybe you don't want the background color to be allowed to be anything. Instead, you might expose a property that can only accept a few whitelisted options.
+CSS Shadow Parts solve the problem of "how do I style XYZ". They allow you to define the "parts" that your custom element is composed of. Channel your inner Zeldman. Shadow parts should have some semantic meaning. They should represent an abstract piece of your component. Because these are part of your API, you need to be careful in what you expose publicly. 
+
+**Sometimes the answer to "how do I style XYZ" is, "you don't".** Maybe you don't want the background color to be allowed to be anything. Instead, you might expose a property that can only accept a few whitelisted options.
 
 * Part names should be consistent across all components wherever possible.
 * Shadow parts cannot be nested.
