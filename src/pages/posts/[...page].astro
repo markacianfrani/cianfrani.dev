@@ -1,0 +1,34 @@
+---
+export async function getStaticPaths({ paginate, rss }) {
+	const allPosts = Astro.fetchContent<MarkdownFrontmatter>('./*.md');
+	const sortedPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+
+	// Generate an RSS feed from this collection of posts.
+	// NOTE: This is disabled by default, since it requires `buildOptions.site` to be set in your "astro.config.mjs" file.
+	  rss({
+	    title: 'Mark Anthony Cianfrani',
+	    description: 'The personal rantings of Mark Anthony Cianfrani.',
+	    customData: `<language>en-us</language>`,
+	    items: sortedPosts.map(item => ({
+	      title: item.title,
+	      description: item.description,
+	      link: item.url,
+	      pubDate: item.date,
+	    })),
+	  });
+
+	// Return a paginated collection of paths for all posts
+	return paginate(sortedPosts, { pageSize: 1 });
+}
+
+
+// collection
+interface MarkdownFrontmatter {
+	date: number;
+	description: string;
+	title: string;
+}
+
+const { page } = Astro.props;
+---
+
