@@ -64,8 +64,9 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 	</head>
 
 	<body>
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
 		<BlogHeader />
-		<div class="wrapper">
 			<main class="content">
 				<section class="intro">
 					<h1 class="latest">{title}</h1>
@@ -75,6 +76,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}
 				</section>
 			</main>
+		</div>
 		</div>
 	</body>
 
