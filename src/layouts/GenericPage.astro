@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogPost from '../components/BlogPost.astro';
+import '../styles/global.css';
+export interface Props {
+	title: string;
+	description: string;
+	permalink: string;
+}
+const { title, description, permalink } = Astro.props;
+
+---
+
+<html lang='en'>
+	<head>
+		<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css"/>
+		<BaseHead {title} {description} {permalink} />
+	</head>
+
+	<body class="">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="max-w-6xl mx-auto">
+				<BlogHeader />
+					<slot />
+			</div>
+		</div>
+	</body>
+</html>
