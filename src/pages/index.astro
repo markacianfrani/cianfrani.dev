@@ -69,7 +69,6 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 
 		<BlogHeader />
 		<section class="mt-8">
-<h1>About Me</h1>
 <div class="flex">
 	<img class="rounded-full w-40 h-40 mr-8 border-4 border-brand" src="/assets/me.jpeg" alt="A headshot of Mark Anthony Cianfrani, half asleep"/>
 	<div class="flex justify-center flex-col">
@@ -85,10 +84,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 </div>
 </section>
 			<main class="content">
-				<section class="intro">
-					<h1 class="latest">{title}</h1>
-					<p>{description}</p>
-				</section>
+				
 				<section aria-label="Blog post list">
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}
 				</section>
