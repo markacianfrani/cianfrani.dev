@@ -246,7 +246,7 @@ img.cover {
 }
 
 blockquote {
-	font-size: 1.25rem;
+	font-size: 1.025rem;
 	--padding-block: 1rem;
 	--padding-inline: 1.25rem;
 	--color: var(--theme-divider);
