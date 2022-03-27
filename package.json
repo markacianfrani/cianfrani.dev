@@ -1,7 +1,9 @@
 {
-  "name": "@example/blog",
+  "name": "cianfrani.dev",
   "version": "0.0.1",
   "private": true,
+  "author": "Mark Anthony Cianfrani",
+  "homepage": "https://cianfrani.dev",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
