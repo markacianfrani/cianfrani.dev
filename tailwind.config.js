@@ -6,9 +6,13 @@ module.exports = {
   theme: {
     colors: {
       brand: '#d96459'
-    }
+    },
+    extend: {}
   },
   corePlugins: {
     preflight: false,
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 };

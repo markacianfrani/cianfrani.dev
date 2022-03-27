@@ -83,11 +83,12 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 		</div>
 	</div>
 </section>
-			<main class="content">
+		<main class="content">
 				
-				<section aria-label="Blog post list">
+				<section aria-label="Blog post list" class="prose lg:prose-xl max-w-none">
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}
 				</section>
+				
 			</main>
 		</div>
 		</div>

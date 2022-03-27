@@ -21,7 +21,7 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 				<h1 class="title">{title}</h1>
 				<Author name="@markacianfrani" href="https://twitter.com/markacianfrani" />
 			</header>
-			<main class="overflow-hidden">
+			<main class="overflow-hidden max-w-none prose lg:prose-xl">
 				<slot />
 			</main>
 		</div>
