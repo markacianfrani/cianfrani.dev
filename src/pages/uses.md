@@ -30,6 +30,8 @@ description:  Stuff I Use
 ## Software
 
 * VS Code
+  * Font - Fira Code
+  * Theme - [Predawn](https://github.com/jamiewilson/predawn)
 * Sublime Text - For copy and pasting random notes, json blurbs, and definitely not API keys.
 * [Obsidian](https://obsidian.md/) - Personal wiki
 * iTerm2 w/ [Spaceship Prompt](https://github.com/spaceship-prompt/spaceship-prompt)
