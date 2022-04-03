@@ -4,10 +4,12 @@ module.exports = {
     './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}',
   ],
   theme: {
-    colors: {
-      brand: '#d96459'
-    },
-    extend: {}
+
+    extend: {
+      colors: {
+        brand: '#d96459'
+      }
+    }
   },
   corePlugins: {
     preflight: false,
